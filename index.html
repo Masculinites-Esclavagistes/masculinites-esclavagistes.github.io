@@ -6,25 +6,48 @@
     <title>Participating in the Development of a Model for the Digital Processing of Modern Manuscript Archives</title>
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; }
-        h1, h2, h3 { color: #333; }
+        h1, h2, h3 { 
+            text-align: center; /* Centre les titres */
+        }
+        h1{ 
+            color: #443fc6; /* Couleur du texte */
+        }
+        h2, h3 { 
+            color: #333; /* Couleur du texte */
+        }
         ul { margin-left: 20px; }
+
+        /* Ajout du style pour la ligne */
+        .custom-line {
+            border: none; /* Supprime la bordure par défaut */
+            height: 2px; /* Épaisseur de la ligne */
+            background-color: #443fc6; /* change la couleur de la ligne  */
+            width: 95%; /* Largeur personnalisée */
+            margin: 30px auto 50px auto; /* Augmente l'espace sous la ligne */
+        }
     </style>
 </head>
+
 <body>
-    <h1>Participating in the Development of a Model for the Digital Processing of Modern Manuscript Archives</h1>
-    <h2>Progress Report on the SNSF Project ‘Colonial Masculinities. Gender and Violence in the French Caribbean (18<sup>th</sup> Century)'</h2>
+    <img src="images/Logo.png" alt="Logo MEGV - Data" style="display: block; margin: auto;" width=200>
+    <h1> MEGV Project </h1>
+
+    <hr class="custom-line">
+
+    <h2>Participating in the Development of a Model for the Digital Processing of Modern Manuscript Archives</h2>
+    <h3>Progress Report on the SNSF Project ‘Colonial Masculinities. Gender and Violence in the French Caribbean (18<sup>th</sup> Century)'</h3>
     
-    <p><strong>Authors:</strong> Marion Philip, Elodie Bascoul, Simon Gabay, Thomas Gauffroy-Naudin, Méloé Maillard</p>
-    <p><strong>Date:</strong> December 2024</p>
+    <p style="text-align:center;"><strong>Authors:</strong> Marion Philip, Elodie Bascoul, Simon Gabay, Thomas Gauffroy-Naudin, Méloé Maillard</p>
+    <p style="text-align:center;"><strong>Date:</strong> December 2024</p>
     
-    <h2>Introduction</h2>
+    <h4>Introduction</h4>
     <p>The aim of this paper is to explain the method, the choices and the location of the data resulting from the retranscription via the escriptorium - Kraken tool of
 	a sampling of manuscript sources from the SNSF project <i>Colonial Masculinities. Gender and Violence in the French Caribbean (18<sup>th</sup> Century)</i>.<br>
     This project is led by Marie Houllemare, at the University of Geneva since August 2024. The team consists of Marion Philip, a post-doctoral researcher, Elodie Bascoul,
 	a doctoral student, with IT support from Thomas Naudin-Geoffroy and research assistant Méloé Maillard. 
 	Link to <a href="https://www.unige.ch/masculinitesesclavagistes/" target="_blank">project website</a>.</p>
     
-    <h2>The Project</h2>
+    <h4>The Project</h4>
     <p>The aim of the SNSF ‘Colonial Masculinities’ (MEGV) project is to document the relationship between free men and violence in the French West Indies in the eighteenth century.
 	It seeks to examine how the widespread violence of Caribbean slave societies shaped masculine norms, both among the colonial elites (administrators, planters, officers), their
 	intermediaries (plantation managers and bursars), and among subordinate colonists (soldiers, craftsmen, day labourers).</p>
@@ -34,7 +57,7 @@
 	The plantation archives and a selection of court files will be used to produce in-depth case studies, a critical edition of which will be published on the <a href="https://www.unige.ch/masculinitesesclavagistes/" target="_blank">project website</a>
 	 in open access. The entire corpus of remission's letters will also be treated in a serial approach, the data and analyses of which will be published online.</p>
     
-    <h2>The Digital Processing of the Corpus</h2>
+    <h4>The Digital Processing of the Corpus</h4>
     <p>The digital treatment of these different manuscript corpora from the eighteenth century, using the escriptorium tool, therefore constituted the first phase in the development of the
 	MEGV collective project The aim was to achieve two objectives:</p>
     <ul>
@@ -51,7 +74,7 @@
 	on escriptorium - Kraken. The results were not convincing, as the automatic transcriptions were not very readable and a keyword search could not have been carried out even using
 	lemmatisation. It was therefore necessary to start by training an OCR model for escriptorium from our data.</p>
     
-    <h2>Creating Datasets</h2>
+    <h4>Creating Datasets</h4>
     <p> We created different datasets and tried to : </p>
     <ul>
         <li>Vary the types of corpus: court files and correspondence do not have the same form (nor do they have the same hands).</li>
@@ -64,7 +87,7 @@
 	in <a href="https://github.com/Masculinites-Esclavagistes/MEGV-FR-MSS-18" target="_blank">the Github repository of the project</a>. To cite the repository see the file <a href="https://github.com/Masculinites-Esclavagistes/MEGV-FR-MSS-18/blob/main/htr-united.yml" target="_blank">htr-united.yml</a>,
 	and distributed as throughout the <a href="https://github.com/Masculinites-Esclavagistes/MEGV-FR-MSS-18/tree/main/data" target="_blank">"data" folder on our github </a>.</p>
     
-    <h2>Publishing and Sharing Data</h2>
+    <h4>Publishing and Sharing Data</h4>
     <p>Once the data had been transcribed on escriptorium, they were exported in XML-ALTO format, together with the source images, and published in <a href="https://github.com/Masculinites-Esclavagistes/MEGV-FR-MSS-18" target="_blank">the Github repository for the project</a>,
 	in a file <a href="https://github.com/Masculinites-Esclavagistes/MEGV-FR-MSS-18/tree/main/data" target="_blank">"data"</a>. They are available for use under the CC-BY-NC licence.</p>
 </body>
