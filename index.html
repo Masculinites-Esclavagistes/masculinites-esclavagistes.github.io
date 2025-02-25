@@ -1,7 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participating in the Development of a Model for the Digital Processing of Modern Manuscript Archives</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; }
+        h1, h2, h3 { color: #333; }
+        ul { margin-left: 20px; }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <h1>Participating in the Development of a Model for the Digital Processing of Modern Manuscript Archives</h1>
+    <h2>Progress Report on the SNSF Project ‘Colonial Masculinities. Gender and Violence in the French Caribbean (18<sup>th</sup> Century)'</h2>
+    
+    <p><strong>Authors:</strong> Marion Philip, Elodie Bascoul, Simon Gabay, Thomas Gauffroy-Naudin, Méloé Maillard</p>
+    <p><strong>Date:</strong> December 2024</p>
+    
+    <h2>Introduction</h2>
+    <p>The aim of this paper is to explain the method, the choices and the location of the data resulting from the retranscription via the escriptorium - Kraken tool of
+	a sampling of manuscript sources from the SNSF project <i>Colonial Masculinities. Gender and Violence in the French Caribbean (18<sup>th</sup> Century)</i>.<br>
+    This project is led by Marie Houllemare, at the University of Geneva since August 2024. The team consists of Marion Philip, a post-doctoral student, Elodie Bascoul,
+	a doctoral student, with IT support from Thomas Naudin-Geoffroy and research assistant Méloé Maillard. 
+	Link to <a href="https://www.unige.ch/masculinitesesclavagistes/" target="_blank">project website</a>.</p>
+    
+    <h2>The Project</h2>
+    <p>The aim of the SNSF ‘Colonial Masculinities’ (MEGV) project is to document the relationship between free men and violence in the French West Indies in the eighteenth century.
+	It seeks to examine how the widespread violence of Caribbean slave societies shaped masculine norms, both among the colonial elites (administrators, planters, officers), their
+	intermediaries (plantation managers and bursars), and among subordinate colonists (soldiers, craftsmen, day labourers).</p>
+    <p>The study is based on a corpus of judicial archives (mainly letters of remission) held at the ANOM (Archives Nationales d'Outre Mer), which can be accessed <a href="https://recherche-anom.culture.gouv.fr/archive/egf/n:100" target="_blank">online</a>,
+	as well as a corpus of private correspondence between owners and managers of Caribbean plantations, held in various archive collections. The research is being conducted from 
+	a qualitative and quantitative historical perspective. 
+	The plantation archives and a selection of court files will be used to produce in-depth case studies, a critical edition of which will be published on the <a href="https://www.unige.ch/masculinitesesclavagistes/" target="_blank">project website</a>
+	 in open access. The entire corpus of remission's letters will also be treated in a serial approach, the data and analyses of which will be published online.</p>
+    
+    <h2>The Digital Processing of the Corpus</h2>
+    <p>The digital treatment of these different manuscript corpora from the eighteenth century, using the escriptorium tool, therefore constituted the first phase in the development of the
+	MEGV collective project The aim was to achieve two objectives:</p>
+    <ul>
+        <li>Use digital tools to facilitate and improve the constitution of the corpus and archive research. The ANOM's official individual files are identified by a very general and often
+	incomplete title, which does not always make it possible to determine their content. A search using key words, not only in the titles of the individual files, but also in their content,
+	would make it easier to locate the legal cases in these very voluminous collections.
+	The collection of former colonial staff kept at the ANOM (Secrétariat d'Etat à la Marine, COL E) consists of 19,339 individual files. Some files are only a single page long, while others
+	may contain several hundred pages}.</li>
+        <li>Prepare a future critical edition as close as possible to the materiality of the trials contained in the ANOM, but also of private correspondence, which can be just as extensive.
+	An effective and appropriate model would enable us to facilitate the transcription of these documents and then the analysis of the text using XML-TEI encoding.</li>
+    </ul>
+    <p>To achieve this goal, we had to test the various models of ocerisation available in the autumn of 2024, trained on the handwriting of the eighteenth century, on samples of our various
+	types of archives.We made our first ocerisation's tests with the model <a href="https://zenodo.org/records/10886224" target="_blank">HTR-United - Manu Mc Fondue (Manuscripts of Modern and Contemporaneous French - Manu McFrench v4)</a>
+	on escriptorium - Kraken. The results were not convincing, as the automatic transcriptions were not very readable and a keyword search could not have been carried out even using
+	lemmatisation. It was therefore necessary to start by training an OCR model for escriptorium from our data.</p>
+    
+    <h2>Creating Datasets</h2>
+    <p> We created different datasets and tried to : </p>
+    <ul>
+        <li>Vary the types of corpus: court files and correspondence do not have the same form (nor do they have the same hands).</li>
+        <li>Vary the type of writings.</li>
+        <li>Vary the types of documents so that segmentation and digitization can be better adapted to the diversity of the different archive collections. For the ANOM archives, we have added a
+	few death registers and a printed decree, for correspondence, a few plantation accounts, etc. However, we have given priority to the files that are of most interest to the project 
+	(remission's letters, complete court files, trials for soldiers who deserted, correspondence)</li>
+    </ul>
+    <p>The datasets are therefore made up of transcriptions of archives from the project's various corpuses, transcribed by Elodie Bascoul, Marion Philip and Méloé Maillard. They are archived 
+	in <a href="https://github.com/Masculinites-Esclavagistes/MEGV-FR-MSS-18" target="_blank">the Github repository of the project</a>. To cite the repository see the file <a href="https://github.com/Masculinites-Esclavagistes/MEGV-FR-MSS-18/blob/main/htr-united.yml" target="_blank">htr-united.yml</a>,
+	and distributed as throughout the <a href="https://github.com/Masculinites-Esclavagistes/MEGV-FR-MSS-18/tree/main/data" target="_blank">"data" folder on our github </a>.</p>
+    
+    <h2>Publishing and Sharing Data</h2>
+    <p>Once the data had been transcribed on escriptorium, they were exported in XML-ALTO format, together with the source images, and published in <a href="https://github.com/Masculinites-Esclavagistes/MEGV-FR-MSS-18" target="_blank">the Github repository for the project</a>,
+	in a file <a href="https://github.com/Masculinites-Esclavagistes/MEGV-FR-MSS-18/tree/main/data" target="_blank">"data"</a>. They are available for use under the CC-BY-NC licence.</p>
 </body>
 </html>
